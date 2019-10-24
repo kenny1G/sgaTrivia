@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\bc_awareness\\bc_awareness\\bc_awareness.csproj": {}
+    "D:\\osele\\Documents\\code\\bc_awareness_website\\bc_awareness\\bc_awareness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\bc_awareness\\bc_awareness\\bc_awareness.csproj": {
+    "D:\\osele\\Documents\\code\\bc_awareness_website\\bc_awareness\\bc_awareness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\bc_awareness\\bc_awareness\\bc_awareness.csproj",
+        "projectUniqueName": "D:\\osele\\Documents\\code\\bc_awareness_website\\bc_awareness\\bc_awareness.csproj",
         "projectName": "bc_awareness",
-        "projectPath": "C:\\Users\\User\\source\\repos\\bc_awareness\\bc_awareness\\bc_awareness.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\bc_awareness\\bc_awareness\\obj\\",
+        "projectPath": "D:\\osele\\Documents\\code\\bc_awareness_website\\bc_awareness\\bc_awareness.csproj",
+        "packagesPath": "C:\\Users\\osele\\.nuget\\packages\\",
+        "outputPath": "D:\\osele\\Documents\\code\\bc_awareness_website\\bc_awareness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\osele\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
