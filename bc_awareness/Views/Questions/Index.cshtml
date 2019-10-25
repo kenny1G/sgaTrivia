@@ -1,0 +1,15 @@
+﻿@model IEnumerable<bc_awareness.Models.Trivia>
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Welcome</h2>
+
+<!-- <p>@ViewData["Content"]</p>-->
+
+
+@foreach (var question in Model)
+{
+    <h2>
+        @question.Question;
+    </h2>
+}

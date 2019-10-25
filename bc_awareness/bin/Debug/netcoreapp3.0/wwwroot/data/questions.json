@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "Question": "physics is boring",
+        "Answer": "TRUE",
+        "Source": "physics class",
+        "Fact": "that's a fact"
+    },
+    {
+        "id": "2",
+        "Question": "I shouldn't think so hard about these",
+        "Answer": "stop thinking so hard then",
+        "Source": "my brain",
+        "Fact": "money"
+    },
+    {
+        "id": "3",
+        "Question": "cats and dogs",
+        "Answer": "rats",
+        "Source": "drugs",
+        "Fact": "loke"
+    },
+    {
+        "id": "4",
+        "Question": "we will succeded",
+        "Answer": "I believe",
+        "Source": "I doubt it",
+        "Fact": "lokey"
+    }
+]

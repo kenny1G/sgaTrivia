@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 
 using bc_awareness.Data;
 using Microsoft.EntityFrameworkCore;
+using bc_awareness.Services;
 
 namespace bc_awareness
 {
@@ -28,7 +29,9 @@ namespace bc_awareness
         {
             //services.AddMvc();
             services.AddControllersWithViews();
-            services.AddDbContext<TriviaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TriviaContext")));
+            // using a json file so no need to use the database context
+            //services.AddDbContext<TriviaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TriviaContext")));
+            services.AddTransient<JsonFileTriviaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

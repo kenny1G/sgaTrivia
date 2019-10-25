@@ -18,4 +18,17 @@
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\data\jsonCreator.py" />
+    <None Include="wwwroot\data\mockCSV.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\data\questions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

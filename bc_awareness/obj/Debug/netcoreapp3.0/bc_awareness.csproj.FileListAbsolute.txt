@@ -238,7 +238,6 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.TagHelpers.input.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.TagHelpers.output.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.RazorCoreGenerate.cache
-D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\HelloWorld\Index.cshtml.g.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -252,3 +251,5 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.csproj.CopyComplete
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.dll
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.pdb
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\bin\Debug\netcoreapp3.0\wwwroot\data\questions.json
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Questions\Index.cshtml.g.cs
