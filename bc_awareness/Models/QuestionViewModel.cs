@@ -9,12 +9,18 @@ namespace bc_awareness.Models
     public class QuestionViewModel
     {
         public Trivia Question { get; set; }
-        public int nextIndex { get; set; }
+        public int NextIndex { get; set; }
+        public List<string> AnswerOptions { get; set; }
 
-        public QuestionViewModel()
+        public QuestionViewModel(Trivia question, int nextIndex)
         {
-            this.Question = new Trivia();
-            this.nextIndex = 1;
+            this.Question = question;
+            this.NextIndex = nextIndex;
+            AnswerOptions = new List<string>();
+            this.AnswerOptions.Add(Question.Answer);
+            this.AnswerOptions.Add("Dummy 1");
+            this.AnswerOptions.Add("Dummy 2");
+            this.AnswerOptions.Add("Dummy 3");
         }
 
     }

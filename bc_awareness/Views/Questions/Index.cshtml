@@ -5,7 +5,11 @@
 
 <!-- <p>@ViewData["Content"]</p>-->
 
-<div class="  text-center">
-    <h2> @Model.Question.Question</h2>
-    <a href="/questions/index/@Model.nextIndex"> next</a>
-</div>
+    <div class="  text-center">
+        <h2> @Model.Question.Question</h2>
+        @foreach (var item in Model.AnswerOptions)
+        {
+            <p>@item</p>
+        }
+        <a href="/questions/index/@Model.NextIndex"> next</a>
+    </div>

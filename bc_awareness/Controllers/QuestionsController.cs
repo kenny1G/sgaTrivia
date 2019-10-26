@@ -34,9 +34,7 @@ namespace bc_awareness.Controllers
             }
 
             var question = Questions.ElementAt(index-1);
-            QuestionViewModel model = new QuestionViewModel();
-            model.Question = question;
-            model.nextIndex = index+1;
+            QuestionViewModel model = new QuestionViewModel(question, index +1);
             return View(model);
         }
     }
