@@ -1,10 +1,11 @@
-﻿@model bc_awareness.Models.Trivia
+﻿@model bc_awareness.Models.QuestionViewModel
 @{
     ViewData["Title"] = "Index";
 }
-<h2>Welcome</h2>
 
 <!-- <p>@ViewData["Content"]</p>-->
 
-
-<h2> @Model.Question</h2>
+<div class="  text-center">
+    <h2> @Model.Question.Question</h2>
+    <a href="/questions/index/@Model.nextIndex"> next</a>
+</div>

@@ -18,23 +18,26 @@ namespace bc_awareness.Controllers
         {
             TriviaService = triviaService;
         }
-        
+
+       
         public IActionResult Index(int? id)
         {
             Questions = TriviaService.GetQuestions();
             int index = 0;
             if (id != null)
             {
-                index = (int) id;
+                index = id ?? default(int);
             }
             else
             {
-                Console.WriteLine("oops");
                 return NotFound();
             }
 
-            var question = Questions.ElementAt(index);
-            return View(question);
+            var question = Questions.ElementAt(index-1);
+            QuestionViewModel model = new QuestionViewModel();
+            model.Question = question;
+            model.nextIndex = index+1;
+            return View(model);
         }
     }
 }
