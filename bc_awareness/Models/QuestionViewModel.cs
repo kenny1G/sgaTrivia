@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace bc_awareness.Models
 {
-    // a view model class that enables me to pass the question and the index of the next question to the view method.
+    // a view model class that enables me to pass the question and a list of answer options to the view.
     public class QuestionViewModel
     {
         public Trivia Question { get; set; }
