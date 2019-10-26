@@ -230,7 +230,6 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\bin\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.csprojAssemblyReference.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\staticwebassets\bc_awareness.StaticWebAssets.Manifest.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\staticwebassets\bc_awareness.StaticWebAssets.xml
-D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.MvcApplicationPartsAssemblyInfo.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.RazorAssemblyInfo.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.RazorAssemblyInfo.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.AssemblyInfoInputs.cache
@@ -253,3 +252,4 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.pdb
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\bin\Debug\netcoreapp3.0\wwwroot\data\questions.json
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Questions\Index.cshtml.g.cs
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.MvcApplicationPartsAssemblyInfo.cache

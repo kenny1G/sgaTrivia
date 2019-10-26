@@ -27,9 +27,19 @@ namespace bc_awareness
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                //Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(60);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                options.Cookie.IsEssential = true;
+            });
             //services.AddMvc();
             services.AddControllersWithViews();
-            // using a json file so no need to use the database context
+            // using a json file as database so no need to use the database context
             //services.AddDbContext<TriviaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TriviaContext")));
             services.AddTransient<JsonFileTriviaService>();
         }
@@ -52,8 +62,9 @@ namespace bc_awareness
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthorization();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
