@@ -16,6 +16,7 @@ namespace bc_awareness.Controllers
         public JsonFileTriviaService TriviaService;
         public IEnumerable<Trivia> Questions { get; private set; }
         const string SessionIndex = "_Index";
+        public const string SessionAnswer = "_Answer";
         public QuestionsController(JsonFileTriviaService triviaService)
         {
             TriviaService = triviaService;
@@ -27,6 +28,7 @@ namespace bc_awareness.Controllers
             Questions = TriviaService.GetQuestions();
             var Index = HttpContext.Session.GetInt32(SessionIndex);
             var question = Questions.ElementAt((int) Index);
+            HttpContext.Session.SetString(SessionAnswer, question.Answer);
             QuestionViewModel model = new QuestionViewModel(question);
             HttpContext.Session.SetInt32(SessionIndex,(int) Index + 1);
             return View(model);
