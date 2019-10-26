@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,13 +10,11 @@ namespace bc_awareness.Models
     public class QuestionViewModel
     {
         public Trivia Question { get; set; }
-        public int NextIndex { get; set; }
         public List<string> AnswerOptions { get; set; }
 
-        public QuestionViewModel(Trivia question, int nextIndex)
+        public QuestionViewModel(Trivia question)
         {
             this.Question = question;
-            this.NextIndex = nextIndex;
             AnswerOptions = new List<string>();
             this.AnswerOptions.Add(Question.Answer);
             this.AnswerOptions.Add("Dummy 1");
