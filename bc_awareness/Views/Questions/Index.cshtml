@@ -9,7 +9,7 @@
         <h2> @Model.Question.Question</h2>
         @foreach (var item in Model.AnswerOptions)
         {
-            <p>@item</p>
+            <p><a href = "/validate?userAnswer=@item"> @item </a></p>
         }
         <a href="/questions/index"> next</a>
     </div>

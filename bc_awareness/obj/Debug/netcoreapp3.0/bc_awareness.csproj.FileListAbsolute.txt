@@ -253,3 +253,4 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\bin\Debug\netcoreapp3.0\wwwroot\data\questions.json
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Questions\Index.cshtml.g.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.MvcApplicationPartsAssemblyInfo.cache
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Validate\Index.cshtml.g.cs
