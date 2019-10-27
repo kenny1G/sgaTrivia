@@ -14,7 +14,9 @@ namespace bc_awareness.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        const string SessionIndex = "_Index";
+        public const string SessionScore = "_Score";
+        public const string SessionIndex = "_Index";
+        public const string SessionAnswer = "_Answer";
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -24,6 +26,7 @@ namespace bc_awareness.Controllers
         public IActionResult Index()
         {
             HttpContext.Session.SetInt32(SessionIndex, 0);
+            HttpContext.Session.SetInt32(SessionScore, 0);
             return View();
         }
 
