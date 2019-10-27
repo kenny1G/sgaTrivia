@@ -15,6 +15,7 @@ with open(csvFilePath, encoding='utf-8-sig') as csvFile:
 for item in data.values():
     questions.append(item)
 random.shuffle(questions)
+random.shuffle(questions)
 print(questions)
 
 with open(jsonFilePath, 'w') as jsonFile:
