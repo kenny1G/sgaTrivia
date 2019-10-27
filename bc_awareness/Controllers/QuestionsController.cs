@@ -14,8 +14,8 @@ namespace bc_awareness.Controllers
     {
 
         public JsonFileTriviaService TriviaService;
-        public IEnumerable<Trivia> Questions { get; private set; }
-       
+        public  IEnumerable<Trivia> Questions { get; private set; }
+
         public QuestionsController(JsonFileTriviaService triviaService)
         {
             TriviaService = triviaService;
@@ -27,18 +27,19 @@ namespace bc_awareness.Controllers
             Questions = TriviaService.GetQuestions();
             var Index = HttpContext.Session.GetInt32(HomeController.SessionIndex);
             Trivia question = null;
-            try
+            if (Index <= 9)
             {
                 question = Questions.ElementAt((int)Index);
             }
-            catch (ArgumentOutOfRangeException e)
+            else
             {
                 return RedirectToAction("Thanks", "Finale");
             }
             
+            
             HttpContext.Session.SetString(HomeController.SessionAnswer, question.Answer);
             QuestionViewModel model = new QuestionViewModel(question);
-            HttpContext.Session.SetInt32(HomeController.SessionIndex,(int) Index + 1);
+            
             return View(model);
         }
     }

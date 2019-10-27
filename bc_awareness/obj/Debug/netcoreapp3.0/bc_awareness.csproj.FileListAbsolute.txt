@@ -255,3 +255,4 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\bc_awareness.MvcApplicationPartsAssemblyInfo.cache
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Validate\Index.cshtml.g.cs
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Finale\Thanks.cshtml.g.cs
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Debug\netcoreapp3.0\Razor\Views\Facts\Index.cshtml.g.cs

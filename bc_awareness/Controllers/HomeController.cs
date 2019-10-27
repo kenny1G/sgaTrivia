@@ -17,10 +17,14 @@ namespace bc_awareness.Controllers
         public const string SessionScore = "_Score";
         public const string SessionIndex = "_Index";
         public const string SessionAnswer = "_Answer";
+        public JsonFileTriviaService TriviaService;
+        public IEnumerable<Trivia> Questions { get; private set; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController( JsonFileTriviaService triviaService)
         {
-            _logger = logger;
+            //_logger = logger;
+            TriviaService = triviaService;
+            Questions = TriviaService.GetQuestions().OrderBy(elem => Guid.NewGuid());
         }
 
         public IActionResult Index()
