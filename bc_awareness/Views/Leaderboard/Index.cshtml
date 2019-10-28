@@ -1,0 +1,32 @@
+﻿@model IEnumerable<bc_awareness.Models.Leaderboard>
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.user)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.score)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.user)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.score)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+

@@ -42,6 +42,7 @@ namespace bc_awareness
             // using a json file as database so no need to use the database context
             //services.AddDbContext<TriviaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TriviaContext")));
             services.AddTransient<JsonFileTriviaService>();
+            services.AddTransient<JsonFileLeaderboardService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

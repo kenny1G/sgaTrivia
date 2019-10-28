@@ -2,8 +2,8 @@
 
 import csv, json, random
 
-csvFilePath = 'mockCSV.csv'
-jsonFilePath = 'questions.json'
+csvFilePath = 'leaderboard.csv'
+jsonFilePath = 'leaderboard.json'
 
 questions = []
 data = {}
