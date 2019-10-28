@@ -1,79 +1,79 @@
 [
-    {
-        "id": "1",
-        "Question": "physics is boring",
-        "Answer": "TRUE",
-        "Source": "physics class",
-        "Fact": "that's a fact"
-    },
-    {
-        "id": "2",
-        "Question": "I shouldn't think so hard about these",
-        "Answer": "stop thinking so hard then",
-        "Source": "my brain",
-        "Fact": "money"
-    },
-    {
-        "id": "3",
-        "Question": "cats and dogs",
-        "Answer": "rats",
-        "Source": "drugs",
-        "Fact": "loke"
-    },
-    {
-        "id": "4",
-        "Question": "we will succeded",
-        "Answer": "I believe",
-        "Source": "I doubt it",
-        "Fact": "lokey"
-    },
-    {
-        "id": "5",
-        "Question": "This is yet another question",
-        "Answer": "this is yet another answer",
-        "Source": "I should get rid of source",
-        "Fact": "yes you should"
-    },
-    {
-        "id": "6",
-        "Question": "what's 2 + 2",
-        "Answer": "4",
-        "Source": "my brain",
-        "Fact": "lol I've done that before"
-    },
-    {
-        "id": "7",
-        "Question": "how many monkeys",
-        "Answer": "50",
-        "Source": "huh huh",
-        "Fact": "ooo yh"
-    },
-    {
-        "id": "8",
-        "Question": "What is the name",
-        "Answer": "dolemite",
-        "Source": "netflix",
-        "Fact": "dolemite is the founder of rap"
-    },
-    {
-        "id": "9",
-        "Question": "what is the game",
-        "Answer": "f** up m**f**",
-        "Source": "netflix",
-        "Fact": "can't wait for eddie murphy's stand up"
-    },
-    {
-        "id": "10",
-        "Question": "daybreak",
-        "Answer": "SHE'S BRITISH",
-        "Source": "netflix",
-        "Fact": "I'm done"
-    },
-    {
-        "id": "11",
-        "Question": "when did yo uwake up",
-        "Answer": "last night",
-        "Source": "jon bellion",
-        "Fact": "I can do this"
-    }
+ {
+  "id": "1",
+  "Question": "physics is boring",
+  "Answer": "TRUE",
+  "Source": "physics class",
+  "Fact": "that's a fact"
+ },
+ {
+  "id": "2",
+  "Question": "I shouldn't think so hard about these",
+  "Answer": "stop thinking so hard then",
+  "Source": "my brain",
+  "Fact": "money"
+ },
+ {
+  "id": "3",
+  "Question": "cats and dogs",
+  "Answer": "rats",
+  "Source": "drugs",
+  "Fact": "loke"
+ },
+ {
+  "id": "4",
+  "Question": "we will succeded",
+  "Answer": "I believe",
+  "Source": "I doubt it",
+  "Fact": "lokey"
+ },
+ {
+  "id": "5",
+  "Question": "This is yet another question",
+  "Answer": "this is yet another answer",
+  "Source": "I should get rid of source",
+  "Fact": "yes you should"
+ },
+ {
+  "id": "6",
+  "Question": "what's 2 + 2",
+  "Answer": "4",
+  "Source": "my brain",
+  "Fact": "lol I've done that before"
+ },
+ {
+  "id": "7",
+  "Question": "how many monkeys",
+  "Answer": "50",
+  "Source": "huh huh",
+  "Fact": "ooo yh"
+ },
+ {
+  "id": "8",
+  "Question": "What is the name",
+  "Answer": "dolemite",
+  "Source": "netflix",
+  "Fact": "dolemite is the founder of rap"
+ },
+ {
+  "id": "9",
+  "Question": "what is the game",
+  "Answer": "f** up m**f**",
+  "Source": "netflix",
+  "Fact": "can't wait for eddie murphy's stand up"
+ },
+ {
+  "id": "10",
+  "Question": "daybreak",
+  "Answer": "SHE'S BRITISH",
+  "Source": "netflix",
+  "Fact": "I'm done"
+ },
+ {
+  "id": "11",
+  "Question": "when did yo uwake up",
+  "Answer": "last night",
+  "Source": "jon bellion",
+  "Fact": "I can do this"
+ }
 ]
