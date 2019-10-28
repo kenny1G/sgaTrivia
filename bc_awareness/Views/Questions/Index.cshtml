@@ -1,0 +1,14 @@
+﻿@model bc_awareness.Models.QuestionViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- <p>@ViewData["Content"]</p>-->
+
+    <div class="  text-center">
+        <h2> @Model.Question.Question</h2>
+        @foreach (var item in Model.AnswerOptions)
+        {
+            <p><a href = "/validate?userAnswer=@item"> @item </a></p>
+        }
+    </div>
