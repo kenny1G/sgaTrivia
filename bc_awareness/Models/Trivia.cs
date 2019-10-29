@@ -14,5 +14,7 @@ namespace bc_awareness.Models
         public string Answer { get; set; }
         public string Source { get; set; }
         public string Fact { get; set; }
+
+        public override string ToString() => JsonSerializer.Serialize<Trivia>(this);
     }
 }

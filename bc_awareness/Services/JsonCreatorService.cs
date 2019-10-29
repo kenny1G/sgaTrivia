@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -35,14 +36,25 @@ namespace bc_awareness.Services
 
             StringBuilder sb = new StringBuilder();
             using (var p = ChoCSVReader.LoadText(csv)
-                .WithFirstLineHeader()
-                )
+                .WithFirstLineHeader())
             {
                 using (var w = new ChoJSONWriter(sb))
                     w.Write(p);
             }
+            var JsonString = sb.ToString();
+            System.IO.File.WriteAllText(JsonFileName, JsonString);
 
-            System.IO.File.WriteAllText(JsonFileName, sb.ToString());
+        }
+
+        // method to shuffle the json, this method is currently not being used
+        private string ShuffleJson(string jsonAsString)
+        {
+            var JsonAsString = jsonAsString.Substring(1, jsonAsString.Length - 5);
+            List<string> JsonsList = JsonAsString.Split("},").ToList();
+            Random rnd = new Random();
+            List<string> ShuffledQuestions = JsonsList.OrderBy(i => rnd.Next()).ToList();
+            var ShuffledJsonAsString = String.Join("},",ShuffledQuestions);
+            return "[" + ShuffledJsonAsString.Substring(0,ShuffledJsonAsString.Length-1) + "}]";
         }
 
     }
