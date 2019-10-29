@@ -44,6 +44,7 @@ namespace bc_awareness
             services.AddTransient<JsonFileTriviaService>();
             services.AddTransient<JsonFileLeaderboardService>();
             services.AddTransient<JsonCreatorService>();
+            services.AddTransient<JsonFileLeaderboardCreatorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

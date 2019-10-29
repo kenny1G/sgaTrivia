@@ -9,15 +9,15 @@
         <h2> @Model.Question.Question</h2>
         @if (Model.Question.Source == "True or False")
         {
-            <a href="/validate?userAnswer=TRUE"> <button> True </button> </a>
-            <a href="/validate?userAnswer=FALSE"> <button> False </button> </a>
+            <p><a href="/validate?userAnswer=TRUE"> <button> True </button> </a></p>
+            <p><a href="/validate?userAnswer=FALSE"> <button> False </button> </a></p>
 
         }
         else
         {
             @foreach (var item in Model.ShuffledAnswerOptions)
             {
-                <a href="/validate?userAnswer=@item"> <button> @item </button> </a>
+                <p><a href="/validate?userAnswer=@item"> <button> @item </button> </a></p>
             }
         }
 

@@ -1,23 +1,23 @@
 [
-    {
-        "id": "2",
-        "User": "joe",
-        "studentId": "901033447",
-        "Score": "9",
-        "email": "blabla@gmail.com"
-    },
-    {
-        "id": "1",
-        "User": "kenny",
-        "studentId": "901033445",
-        "Score": "10",
-        "email": "os1044667@email.ccbcmd.edu"
-    },
-    {
-        "id": "3",
-        "User": "john",
-        "studentId": "901055883",
-        "Score": "2",
-        "email": "yya@gmail.com"
-    }
+ {
+  "id": "1",
+  "User": "kenny",
+  "studentId": "901033445",
+  "Score": "10",
+  "email": "os1044667@email.ccbcmd.edu"
+ },
+ {
+  "id": "2",
+  "User": "joe",
+  "studentId": "901033447",
+  "Score": "9",
+  "email": "blabla@gmail.com"
+ },
+ {
+  "id": "3",
+  "User": "john",
+  "studentId": "901055883",
+  "Score": "2",
+  "email": "yya@gmail.com"
+ }
 ]

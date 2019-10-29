@@ -11,15 +11,18 @@ namespace bc_awareness.Controllers
     public class LeaderboardController : Controller
     {
         public JsonFileLeaderboardService LeaderboardService;
+        public JsonFileLeaderboardCreatorService LeaderboardJsonCreator;
         public IEnumerable<Leaderboard> Players { get; private set; }
 
-        public LeaderboardController(JsonFileLeaderboardService leaderboardService)
+        public LeaderboardController(JsonFileLeaderboardService leaderboardService,JsonFileLeaderboardCreatorService leaderboardJsonCreator)
         {
             LeaderboardService = leaderboardService;
+            LeaderboardJsonCreator = leaderboardJsonCreator;
         }
 
         public IActionResult Index()
         {
+            LeaderboardJsonCreator.CreateJson();
             Players = LeaderboardService.GetPlayers();
             return View(Players);
         }
