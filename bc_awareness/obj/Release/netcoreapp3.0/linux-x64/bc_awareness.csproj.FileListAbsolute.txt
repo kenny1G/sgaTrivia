@@ -440,3 +440,4 @@ D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Release\netcoreapp
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Release\netcoreapp3.0\linux-x64\bc_awareness.csproj.CopyComplete
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Release\netcoreapp3.0\linux-x64\bc_awareness.dll
 D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Release\netcoreapp3.0\linux-x64\bc_awareness.pdb
+D:\osele\Documents\code\bc_awareness_website\bc_awareness\obj\Release\netcoreapp3.0\linux-x64\bc_awareness.csprojAssemblyReference.cache
