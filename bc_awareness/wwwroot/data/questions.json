@@ -3,6 +3,9 @@
   "id": "1",
   "Question": "physics is boring",
   "Answer": "TRUE",
+  "AnswerOption1": "",
+  "AnswerOption2": "",
+  "AnswerOption3": "",
   "Source": "True or False",
   "Fact": "that's a fact"
  },
@@ -10,6 +13,9 @@
   "id": "2",
   "Question": "I shouldn't think so hard about these",
   "Answer": "stop thinking so hard then",
+  "AnswerOption1": "I took a pill",
+  "AnswerOption2": "where",
+  "AnswerOption3": "in ibiza",
   "Source": "my brain",
   "Fact": "money"
  },
@@ -17,6 +23,9 @@
   "id": "3",
   "Question": "cats and dogs",
   "Answer": "rats",
+  "AnswerOption1": "did it hurt",
+  "AnswerOption2": "hurt when",
+  "AnswerOption3": "when you fell from heaven",
   "Source": "drugs",
   "Fact": "loke"
  },
@@ -24,6 +33,9 @@
   "id": "4",
   "Question": "we will succeded",
   "Answer": "I believe",
+  "AnswerOption1": "I got jokes for days",
+  "AnswerOption2": "mozart",
+  "AnswerOption3": "and his monkey",
   "Source": "I doubt it",
   "Fact": "lokey"
  },
@@ -31,6 +43,9 @@
   "id": "5",
   "Question": "This is yet another question",
   "Answer": "this is yet another answer",
+  "AnswerOption1": "databse ahoy",
+  "AnswerOption2": "monkeys lost the war",
+  "AnswerOption3": "really they did",
   "Source": "I should get rid of source",
   "Fact": "yes you should"
  },
@@ -38,6 +53,9 @@
   "id": "6",
   "Question": "what's 2 + 2",
   "Answer": "4",
+  "AnswerOption1": "5",
+  "AnswerOption2": "8",
+  "AnswerOption3": "29",
   "Source": "my brain",
   "Fact": "lol I've done that before"
  },
@@ -45,6 +63,9 @@
   "id": "7",
   "Question": "how many monkeys",
   "Answer": "50",
+  "AnswerOption1": "g wagon g wagon g wagon",
+  "AnswerOption2": "all the house while its pulling up",
+  "AnswerOption3": "I got a lot of toys",
   "Source": "huh huh",
   "Fact": "ooo yh"
  },
@@ -52,6 +73,9 @@
   "id": "8",
   "Question": "What is the name",
   "Answer": "dolemite",
+  "AnswerOption1": "I was pumping fall out boy",
+  "AnswerOption2": "100 bands",
+  "AnswerOption3": "in my pocket",
   "Source": "netflix",
   "Fact": "dolemite is the founder of rap"
  },
@@ -59,6 +83,9 @@
   "id": "9",
   "Question": "what is the game",
   "Answer": "f** up m**f**",
+  "AnswerOption1": "it's all me",
+  "AnswerOption2": "everywhere I go",
+  "AnswerOption3": "okay",
   "Source": "netflix",
   "Fact": "can't wait for eddie murphy's stand up"
  },
@@ -66,6 +93,9 @@
   "id": "10",
   "Question": "daybreak",
   "Answer": "SHE'S BRITISH",
+  "AnswerOption1": "HES CRINGE",
+  "AnswerOption2": "STUFFED ANIMALS",
+  "AnswerOption3": "DR PEPPER",
   "Source": "netflix",
   "Fact": "I'm done"
  },
@@ -73,6 +103,9 @@
   "id": "11",
   "Question": "when did yo uwake up",
   "Answer": "last night",
+  "AnswerOption1": "I NEED",
+  "AnswerOption2": "TO STOP",
+  "AnswerOption3": "POST MALONE",
   "Source": "jon bellion",
   "Fact": "I can do this"
  }

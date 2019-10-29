@@ -12,6 +12,9 @@ namespace bc_awareness.Models
         public string Id { get; set; }
         public string Question { get; set; }
         public string Answer { get; set; }
+        public string AnswerOption1 { get; set; }
+        public string AnswerOption2 { get; set; }
+        public string AnswerOption3 { get; set; }
         public string Source { get; set; }
         public string Fact { get; set; }
 
