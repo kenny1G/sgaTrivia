@@ -17,12 +17,15 @@ namespace bc_awareness.Controllers
         public const string SessionScore = "_Score";
         public const string SessionIndex = "_Index";
         public const string SessionAnswer = "_Answer";
+        public const string ShuffledIndex = "_ShuffledIndex";
         public JsonCreatorService CreatorService;
+        public JsonFileTriviaService TriviaService;
 
-        public HomeController(ILogger<HomeController> logger, JsonCreatorService creatorService)
+        public HomeController(ILogger<HomeController> logger, JsonCreatorService creatorService, JsonFileTriviaService triviaService)
         {
             _logger = logger;
             CreatorService = creatorService;
+            TriviaService = triviaService;
         }
 
         public IActionResult Index()
@@ -30,6 +33,20 @@ namespace bc_awareness.Controllers
 
             HttpContext.Session.SetInt32(SessionIndex, 0);
             HttpContext.Session.SetInt32(SessionScore, 0);
+            // list to store indexes that have already been saved in the session
+            List<int> usedIndexes = new List<int>();
+            int numberOfQuestions = TriviaService.GetQuestions().Count();
+            for (int i = 0; i < 10; i++)
+            {
+                Random rnd = new Random();
+                int randomIndex = rnd.Next(0, numberOfQuestions);
+                while (usedIndexes.Contains(randomIndex))
+                {
+                    randomIndex = rnd.Next(0, numberOfQuestions);
+                }
+                usedIndexes.Add(randomIndex);
+                HttpContext.Session.SetInt32(ShuffledIndex + i, randomIndex);
+            }
             CreatorService.CreateJson();
             return View();
         }

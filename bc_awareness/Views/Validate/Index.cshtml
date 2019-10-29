@@ -3,15 +3,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-@if (ViewBag.result == true)
-{
-    <p>correct</p>
-}
-else
-{
-    <p>wrong</p>
-}
+    <div class="text-center">
 
-<a href="/facts"> next</a>
+        @if (ViewBag.result == true)
+        {
+            <h1>Correct</h1>
+        }
+        else
+        {
+            <h1>Wrong</h1>
+        }
+
+        <h3><a href="/facts"> next</a></h3>
+    </div>
 

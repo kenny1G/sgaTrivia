@@ -29,7 +29,7 @@ namespace bc_awareness.Controllers
             Trivia question = null;
             if (Index <= 9)
             {
-                question = Questions.ElementAt((int)Index);
+                question = Questions.ElementAt((int) HttpContext.Session.GetInt32(HomeController.ShuffledIndex + Index));
             }
             else
             {

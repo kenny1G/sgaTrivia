@@ -11,15 +11,20 @@ namespace bc_awareness.Models
     {
         public Trivia Question { get; set; }
         public List<string> AnswerOptions { get; set; }
+        public List<string> ShuffledAnswerOptions { get; set; }
 
         public QuestionViewModel(Trivia question)
         {
             this.Question = question;
             AnswerOptions = new List<string>();
             this.AnswerOptions.Add(Question.Answer);
-            this.AnswerOptions.Add("Dummy 1");
-            this.AnswerOptions.Add("Dummy 2");
-            this.AnswerOptions.Add("Dummy 3");
+            this.AnswerOptions.Add(Question.AnswerOption1);
+            this.AnswerOptions.Add(Question.AnswerOption2);
+            this.AnswerOptions.Add(Question.AnswerOption3);
+            
+            Random rnd = new Random();
+            ShuffledAnswerOptions = AnswerOptions.OrderBy(i => rnd.Next()).ToList();
+            ShuffledAnswerOptions = ShuffledAnswerOptions.OrderBy(i => rnd.Next()).ToList();
         }
 
     }

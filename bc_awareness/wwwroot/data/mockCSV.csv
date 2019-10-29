@@ -1,12 +1,12 @@
-﻿id,Question,Answer,Source,Fact
-1,physics is boring,TRUE,physics class,that's a fact
-2,I shouldn't think so hard about these,stop thinking so hard then,my brain,money
-3,cats and dogs,rats,drugs,loke
-4,we will succeded,I believe,I doubt it,lokey
-5,This is yet another question,this is yet another answer,I should get rid of source,yes you should
-6,what's 2 + 2,4,my brain,lol I've done that before
-7,how many monkeys,50,huh huh,ooo yh
-8,What is the name,dolemite,netflix,dolemite is the founder of rap
-9,what is the game,f** up m**f**,netflix,can't wait for eddie murphy's stand up
-10,daybreak,SHE'S BRITISH,netflix,I'm done
-11,when did yo uwake up,last night,jon bellion,I can do this
+﻿id,Question,Answer,AnswerOption1,AnswerOption2,AnswerOption3,Source,Fact
+1,physics is boring,TRUE,,,,True or False,that's a fact
+2,I shouldn't think so hard about these,stop thinking so hard then,I took a pill,where,in ibiza,my brain,money
+3,cats and dogs,rats,did it hurt,hurt when,when you fell from heaven,drugs,loke
+4,we will succeded,I believe,I got jokes for days,mozart,and his monkey,I doubt it,lokey
+5,This is yet another question,this is yet another answer,databse ahoy,monkeys lost the war,really they did,I should get rid of source,yes you should
+6,what's 2 + 2,4,5,8,29,my brain,lol I've done that before
+7,how many monkeys,50,g wagon g wagon g wagon,all the house while its pulling up,I got a lot of toys,huh huh,ooo yh
+8,What is the name,dolemite,I was pumping fall out boy,100 bands,in my pocket,netflix,dolemite is the founder of rap
+9,what is the game,f** up m**f**,it's all me,everywhere I go,okay,netflix,can't wait for eddie murphy's stand up
+10,daybreak,SHE'S BRITISH,HES CRINGE,STUFFED ANIMALS,DR PEPPER,netflix,I'm done
+11,when did yo uwake up,last night,I NEED ,TO STOP,POST MALONE,jon bellion,I can do this

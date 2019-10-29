@@ -23,7 +23,7 @@ namespace bc_awareness.Controllers
             var Index = HttpContext.Session.GetInt32(HomeController.SessionIndex);
             if (Index <= 9)
             {
-                ViewBag.fact = Questions.ElementAt((int)Index).Fact;
+                ViewBag.fact = Questions.ElementAt((int)HttpContext.Session.GetInt32(HomeController.ShuffledIndex + Index)).Fact;
             }
             else
             {

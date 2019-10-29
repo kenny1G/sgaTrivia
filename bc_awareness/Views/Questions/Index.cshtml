@@ -7,8 +7,18 @@
 
     <div class="  text-center">
         <h2> @Model.Question.Question</h2>
-        @foreach (var item in Model.AnswerOptions)
+        @if (Model.Question.Source == "True or False")
         {
-            <p><a href = "/validate?userAnswer=@item"> <button> @item </button> </a></p>
+            <p><a href="/validate?userAnswer=TRUE"> <button> True </button> </a></p>
+            <p><a href="/validate?userAnswer=FALSE"> <button> False </button> </a></p>
+
         }
+        else
+        {
+            @foreach (var item in Model.ShuffledAnswerOptions)
+            {
+                <p><a href="/validate?userAnswer=@item"> <button> @item </button> </a></p>
+            }
+        }
+
     </div>
