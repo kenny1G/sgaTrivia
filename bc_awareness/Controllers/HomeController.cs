@@ -17,20 +17,20 @@ namespace bc_awareness.Controllers
         public const string SessionScore = "_Score";
         public const string SessionIndex = "_Index";
         public const string SessionAnswer = "_Answer";
-        public JsonFileTriviaService TriviaService;
-        public IEnumerable<Trivia> Questions { get; private set; }
+        public JsonCreatorService CreatorService;
 
-        public HomeController( JsonFileTriviaService triviaService)
+        public HomeController(ILogger<HomeController> logger, JsonCreatorService creatorService)
         {
-            //_logger = logger;
-            TriviaService = triviaService;
-            Questions = TriviaService.GetQuestions().OrderBy(elem => Guid.NewGuid());
+            _logger = logger;
+            CreatorService = creatorService;
         }
 
         public IActionResult Index()
         {
+
             HttpContext.Session.SetInt32(SessionIndex, 0);
             HttpContext.Session.SetInt32(SessionScore, 0);
+            CreatorService.CreateJson();
             return View();
         }
 
