@@ -7,7 +7,7 @@
 
     <div class="  text-center">
         <h2> @Model.Question.Question</h2>
-        @foreach (var item in Model.AnswerOptions)
+        @foreach (var item in Model.ShuffledAnswerOptions)
         {
             <p><a href = "/validate?userAnswer=@item"> <button> @item </button> </a></p>
         }

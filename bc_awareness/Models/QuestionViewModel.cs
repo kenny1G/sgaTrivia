@@ -11,6 +11,7 @@ namespace bc_awareness.Models
     {
         public Trivia Question { get; set; }
         public List<string> AnswerOptions { get; set; }
+        public List<string> ShuffledAnswerOptions { get; set; }
 
         public QuestionViewModel(Trivia question)
         {
@@ -20,6 +21,9 @@ namespace bc_awareness.Models
             this.AnswerOptions.Add("Dummy 1");
             this.AnswerOptions.Add("Dummy 2");
             this.AnswerOptions.Add("Dummy 3");
+            Random rnd = new Random();
+            ShuffledAnswerOptions = AnswerOptions.OrderBy(i => rnd.Next()).ToList();
+            ShuffledAnswerOptions = ShuffledAnswerOptions.OrderBy(i => rnd.Next()).ToList();
         }
 
     }
