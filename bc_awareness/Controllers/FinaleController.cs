@@ -12,6 +12,10 @@ namespace bc_awareness.Controllers
         public IActionResult Thanks()
         {
             ViewBag.score = HttpContext.Session.GetInt32(HomeController.SessionScore);
+            String timeStamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+            HttpContext.Session.SetString(HomeController.EndTime, timeStamp);
+            ViewBag.startTime = HttpContext.Session.GetString(HomeController.StartTime);
+            ViewBag.endTime = HttpContext.Session.GetString(HomeController.EndTime);
             return View();
         }
     }
