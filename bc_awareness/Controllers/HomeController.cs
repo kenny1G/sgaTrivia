@@ -18,6 +18,7 @@ namespace bc_awareness.Controllers
         public const string SessionIndex = "_Index";
         public const string SessionAnswer = "_Answer";
         public const string ShuffledIndex = "_ShuffledIndex";
+        public const string StartTime = "_StartTime";
         public JsonCreatorService CreatorService;
         public JsonFileTriviaService TriviaService;
 
