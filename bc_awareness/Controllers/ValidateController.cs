@@ -17,6 +17,8 @@ namespace bc_awareness.Controllers
             {
                 ViewBag.result = true;
                 HttpContext.Session.SetInt32(HomeController.SessionScore, (int) HttpContext.Session.GetInt32(HomeController.SessionScore) + 1);
+                String timeStamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+                HttpContext.Session.SetString(HomeController.EndTime, timeStamp);
             }
             else
             {
