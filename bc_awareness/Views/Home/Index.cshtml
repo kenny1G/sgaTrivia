@@ -1,13 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Hi, Please don't hack my site.
+        sincerely,
+        Kenny
+        -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGA - Breast Cancer Awareness</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:#FAD1E3">
+    <header>
+    </header>
+    <div class="container">
+        <main role="main" class="inner cover">
+            <div class="text-xl-center">
+                <br />
+                <div class="cover-heading">
+                    <img src="~/images/CarnivalLogo.png" class="img-fluid" alt="Responsive image" />
+                </div>
+                <a class="btn btn-outline-primary btn-lg" href="/questions/" role="button">START</a> &nbsp&nbsp
+                <a class="btn btn-outline-primary btn-lg" href="/leaderboard/" role="button">LEADERBOARD</a>
+            </div>
 
-    <div class="text-center">
-        <div style="display:block;">
-            <img src="~/images/CarnivalLogo.png" class="img-fluid" alt="Responsive image" />
-        </div>
-        
-        <h4><a href="/questions/">Start</a></h4>
-        <h4><a href="/leaderboard/">Leaderboard</a></h4>
-
+        </main>
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+

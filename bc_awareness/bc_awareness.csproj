@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\data\jsonCreator.py" />
     <None Include="wwwroot\data\mockCSV.csv" />
   </ItemGroup>

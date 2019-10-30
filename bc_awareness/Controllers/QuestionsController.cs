@@ -26,6 +26,12 @@ namespace bc_awareness.Controllers
         {
             Questions = TriviaService.GetQuestions();
             var Index = HttpContext.Session.GetInt32(HomeController.SessionIndex);
+            // if user is just starting to answer questions save the current time
+            if (Index == 0)
+            {
+                String timeStamp = DateTime.Now.ToString("HHmmss");
+                HttpContext.Session.SetString(HomeController.StartTime, timeStamp.Substring(0, 2) + ":" + timeStamp.Substring(2, 2) + ":" + timeStamp.Substring(4, 2));
+            }
             Trivia question = null;
             if (Index <= 9)
             {

@@ -3,17 +3,23 @@
     ViewData["Title"] = "Index";
 }
 
-    <div class="text-center">
+    <div class="text-xl-center">
 
         @if (ViewBag.result == true)
         {
-            <h1>Correct</h1>
+            <br />
+            <br />
+            <h1 class="display-1">CORRECT</h1>
         }
         else
         {
-            <h1>Wrong</h1>
+            <br />
+            <br />
+            <h1 class="display-1">WRONG</h1>
         }
 
-        <h3><a href="/facts"> next</a></h3>
+        <br />
+        <a href="/facts" class="btn btn-outline-primary btn-lg" role="button"> NEXT >></a>
     </div>
+
 

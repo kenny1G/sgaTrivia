@@ -3,22 +3,24 @@
     ViewData["Title"] = "Index";
 }
 
-<!-- <p>@ViewData["Content"]</p>-->
+<div class="  text-xl-center align-middle">
+    <h1 class="display-1"> @Model.Question.Question</h1>
+    @if (Model.Question.Source == "True or False")
+    {
+        <br />
+        <a class="btn btn-outline-primary btn-lg btn-block" href="/validate?userAnswer=TRUE" role="button">  True  </a> <br />
+        <a class="btn btn-outline-primary btn-lg btn-block" href="/validate?userAnswer=FALSE" role="button">  False  </a>
 
-    <div class="  text-center">
-        <h2> @Model.Question.Question</h2>
-        @if (Model.Question.Source == "True or False")
+    }
+    else
+    {
+        <br />
+        @foreach (var item in Model.ShuffledAnswerOptions)
         {
-            <p><a href="/validate?userAnswer=TRUE"> <button> True </button> </a></p>
-            <p><a href="/validate?userAnswer=FALSE"> <button> False </button> </a></p>
-
+            <a class="btn btn-outline-primary btn-lg btn-block" href="/validate?userAnswer=@item" role="button"> @item </a><br />
         }
-        else
-        {
-            @foreach (var item in Model.ShuffledAnswerOptions)
-            {
-                <p><a href="/validate?userAnswer=@item"> <button> @item </button> </a></p>
-            }
-        }
+    }
 
-    </div>
+
+</div>
+
