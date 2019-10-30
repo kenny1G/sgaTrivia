@@ -2,8 +2,15 @@
 @{
     ViewData["Title"] = "Thanks";
 }
-    <div class="text-center">
-        <h1>@ViewBag.score</h1>
+    <div class="text-xl-center">
+        <h1 class="display-1">Thanks For Playing</h1>
+        <h1 class="display-2"> Score: @ViewBag.score</h1>
+        <h1 class="display-3"> Start: @ViewBag.startTime</h1>
+        <h1 class="display-3"> End: @ViewBag.endTime</h1>
+        <br />
+        <p class="lead">To get your name on the leaderboard and enter to win a gift card please show this screen to Kenny at the Trivia booth in ssrv 004!</p>
+        <a href ="/leaderboard" class="btn btn-outline-primary btn-lg" role="button">LEADERBOARD</a>
+
     </div>
 
 

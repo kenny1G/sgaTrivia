@@ -3,9 +3,14 @@
     ViewData["Title"] = "Index";
 }
 
-    <div class="text-center">
-        <h1>Did you Know ...</h1>
-        <h3>@ViewBag.fact</h3>
-        <h4><a href="/questions/">next</a></h4>
+    <div class="text-lg-left">
+        <h1 class="display-1">Did you Know ...</h1>
+        <blockquote class="blockquote text-right">
+            <h1 class="display-3">@ViewBag.fact</h1>
+        </blockquote>
     </div>
+    <div class="text-xl-center">
+        <h4><a href="/questions/" class="btn btn-outline-primary btn-lg" role="button">NEXT >></a></h4>
+    </div>
+    
 
